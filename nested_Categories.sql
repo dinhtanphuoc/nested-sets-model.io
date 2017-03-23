@@ -1,0 +1,55 @@
+-- MySQL dump 10.13  Distrib 5.7.17, for Linux (x86_64)
+--
+-- Host: 127.0.0.1    Database: nested
+-- ------------------------------------------------------
+-- Server version	5.7.17-0ubuntu0.16.04.1
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8 */;
+/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+/*!40103 SET TIME_ZONE='+00:00' */;
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+--
+-- Table structure for table `Categories`
+--
+
+DROP TABLE IF EXISTS `Categories`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `Categories` (
+  `id` int(6) NOT NULL AUTO_INCREMENT,
+  `Category_name` varchar(30) NOT NULL,
+  `Category_parent_id` int(6) DEFAULT NULL,
+  `Category_left` int(6) DEFAULT NULL,
+  `Category_right` int(6) DEFAULT NULL,
+  `Category_date` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=17 DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `Categories`
+--
+
+LOCK TABLES `Categories` WRITE;
+/*!40000 ALTER TABLE `Categories` DISABLE KEYS */;
+INSERT INTO `Categories` VALUES (1,'CEO',0,0,31,'2017-03-23 08:45:57'),(2,'Laptop',1,1,10,'2017-03-23 07:18:54'),(3,'Dien Thoai',1,23,28,'2017-03-23 08:45:57'),(4,'May Lanh',1,11,18,'2017-03-23 07:28:19'),(5,'Asus',2,2,3,'2017-03-23 07:18:54'),(6,'Dell',2,4,5,'2017-03-23 07:18:54'),(7,'Iphone',3,24,25,'2017-03-23 08:45:57'),(8,'Sam Sung',3,26,27,'2017-03-23 08:45:57'),(9,'Toshiba',4,16,17,'2017-03-23 07:28:19'),(10,'HP',2,6,7,'2017-03-23 07:18:54'),(11,'May In',1,21,22,'2017-03-23 07:28:19'),(12,'May Ban',1,29,30,'2017-03-23 08:45:57'),(13,'Lennovo',2,8,9,'2017-03-23 07:18:54'),(14,'LG',4,14,15,'2017-03-23 07:19:11'),(15,'AQUA',4,12,13,'2017-03-23 07:19:11'),(16,'Thiet Bi',1,19,20,'2017-03-23 07:28:19');
+/*!40000 ALTER TABLE `Categories` ENABLE KEYS */;
+UNLOCK TABLES;
+/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+
+-- Dump completed on 2017-03-23 16:22:54

@@ -1,0 +1,232 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    text-align: center;
+}
+nav{
+    width:60%;
+    line-height: 40px;
+    color: black;
+    clear:both;
+    padding-left: 20%;
+    padding-right: 20%;
+    text-align: left;
+}
+nav ul{
+    width:80%;
+    float:right;
+    clear:both;
+}
+nav li{
+    display: inline-block;
+    width: 15%;
+    line-height: 40px;
+    position: relative;
+    float: right;
+}
+nav a{
+    text-decoration: none;
+    color: black;
+    display: block;
+    text-align: center;
+
+}
+nav a:hover{
+    background-color: floralwhite;
+}
+.sub-nav{
+    display: none;
+    position: absolute;
+    width: 100%;
+}
+nav li:hover .sub-nav{
+    display: block;
+}
+.sub-nav li {
+    display: block;
+    width: 100%;
+}
+.sub-ul{
+    display: none;
+    position: absolute;
+    width: 100%;
+    right: -100%;
+    top: 0px;
+}
+sub-ul li{
+    display:block;
+    width:100%;
+}
+nav li .sub-nav li:hover > .sub-ul{
+    display: block;
+}
+.image {
+    width: 100%;
+    background-color: gray;
+    height: 100px;
+    clear: both;
+    padding-top: 150px;
+    padding-bottom: 150px;
+}
+.image>p{
+    font-size: 20px;
+}
+.image>h1{
+    font-size: 60px;
+}
+.image>button{
+    padding: 10px;
+    text-decoration: none;
+    background-color: black;
+}
+.image a{
+    text-decoration: none;
+    color: white;
+}
+section{
+    width:100%;
+    clear: both;
+    padding-top: 3%;
+}
+.article-1{
+    padding-left: 20%;
+    width: 15%;
+    float: left;
+}
+.article-1 ul{
+    list-style-type: none;
+}
+.article-1 ul li{
+    width: 100%;
+    line-height: 40px;
+    position: relative;
+    text-align: left;
+
+}
+.article-1 a{
+    text-decoration: none;
+    text-align: left;
+}
+
+#gallery{
+    float: left;
+    width: 80%;
+    height: 200px;
+    background-color: gainsboro;
+}
+.article-1>h2{
+    text-align: left;
+    font-size: 30px;
+    padding-top: 10%;
+    padding-bottom: 15%;
+}
+.article-1>h3{
+    text-align: left;
+    font-size: 30px;
+    padding-top: 10%;
+    padding-bottom: 15%;
+}
+.a{
+    border-bottom: 1px solid black;
+    width: 52px;
+}
+.article-2{
+    width: 45%;
+    padding-right: 20%;
+    float: left;
+}
+.article-2>h2{
+    text-align: center;
+    font-size: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.clear{
+    clear: both;
+}
+
+#about-1{
+    float: left;
+    width: 20%;
+    height: 150px;
+    padding: 5%;
+    background-color: gainsboro;
+}
+#about-2{
+    float: left;
+    width: 60%;
+    padding-left: 2%;
+}
+#about-2>p{
+    text-align: left;
+}
+.list>h2{
+    text-align: center;
+    font-size: 30px;
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+.sub-list1 , .sub-list2 , .sub-list3 ,.sub-list4 ,.sub-list5 , .sub-list6{
+    float: left;
+    width: 30%;
+    height: 150px;
+    padding: 12% 1% 0% 1%;
+    background-color: gainsboro;
+    border: 1px solid black;
+    margin: 1% 1% 0% 0%;
+}
+.list a{
+    text-decoration: none;
+}
+
+footer{
+    margin-top: 5%;
+    float: left;
+    width: 60%;
+    padding-left: 20%;
+    height: 50px;
+}
+footer>p{
+    color: black;
+    font-size: 15px;
+    text-align: left;
+}
+.article-1>h2:after{
+    z-index: 2;
+    content: " ";
+    display: block;
+    padding-top: 7px;
+    padding: 10px;
+    border-bottom: 1px solid black;
+    width: 40px;
+    margin-left: 10%;
+}
+.article-1>h3:after{
+    z-index: 2;
+    content: " ";
+    display: block;
+    padding-top: 7px;
+    padding: 10px;
+    border-bottom: 1px solid black;
+    width: 25px;
+    margin-left: 10%;
+}
+.article-2>h2:after{
+    z-index: 2;
+    content: " ";
+    display: block;
+    padding: 1%;
+    border-bottom: 1px solid black;
+    width: 30px;
+    margin-left: 48%;
+}
+.list>h2:after{
+    z-index: 2;
+    content: " ";
+    display: block;
+    padding: 1%;
+    border-bottom: 1px solid black;
+    width: 50px;
+    margin-left: 46%;
+}
